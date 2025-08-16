@@ -1,0 +1,24 @@
+{
+  "title": "Legal Corner: Know Your Rights Under the CBA",
+  "id": "legal-corner-know-your-rights",
+  "date": "2025-08-01",
+  "category": "Legal Corner",
+  "blocks": [
+    { "type": "p", "text": "This quick guide helps members understand key provisions of the Collective Bargaining Agreement (CBA) in plain language." },
+    { "type": "h2", "text": "Leave Entitlements" },
+    { "type": "ul", "items": [
+      "Annual leave minimums based on service length.",
+      "Sick leave procedure and certification.",
+      "Special leave for family emergencies."
+    ]},
+    { "type": "h2", "text": "Overtime & Compensation" },
+    { "type": "p", "text": "Know the overtime thresholds, rates, and how to record hours to ensure correct pay." },
+    { "type": "h2", "text": "Grievance Process" },
+    { "type": "ol", "items": [
+      "Report the issue to your immediate supervisor.",
+      "Escalate to HR/Union Rep with written record.",
+      "Request mediation or formal hearing where needed."
+    ]},
+    { "type": "quote", "text": "Rights are strongest when documented. Keep copies of letters, emails, and timesheets." }
+  ]
+}

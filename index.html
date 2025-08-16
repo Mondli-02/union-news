@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZEHSSCWU News & Updates</title>
+  <!-- Google Fonts: Montserrat & Nunito -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,600,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.jpg">
+  <meta name="description" content="All things union: news, meetings, legal articles, and tutorials for members." />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Union Logo" class="logo" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <a href="index.html" class="home-link"><h1>ZEHSSCWU News & Updates</h1></a>
+          <p class="tagline">Meetings • Legal Corner • Tutorials</p>
+        </div>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="btn-nav">Home</a>
+        <a href="#" id="aboutLink" aria-disabled="true" class="btn-nav">About</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar" id="sidebar">
+      <h2 class="sidebar-title">Latest Articles</h2>
+      <ul id="articleSidebarList" class="sidebar-list"></ul>
+    </aside>
+    <section class="main-content">
+      <section class="controls">
+        <input id="searchInput" type="search" placeholder="Search articles…" aria-label="Search articles" />
+        <select id="categorySelect" aria-label="Filter by category">
+          <option value="">All Categories</option>
+          <option value="News & Updates">News & Updates</option>
+          <option value="Legal Corner">Legal Corner</option>
+          <option value="Tutorials & Guides">Tutorials & Guides</option>
+          <option value="Opinion & Advocacy">Opinion & Advocacy</option>
+        </select>
+      </section>
+
+      <section id="feed" class="feed" aria-live="polite"></section>
+
+      <nav class="pager" id="pager" hidden>
+        <button id="prevPage" class="btn-neutral">Previous</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage" class="btn-neutral">Next</button>
+      </nav>
+
+      <!-- Info Cards Section -->
+      <section class="info-cards">
+        <div class="info-card">
+          <h3><i class="fab fa-whatsapp"></i> Get Article Updates on WhatsApp</h3>
+          <p>Sign up to receive new union articles and news directly on WhatsApp!</p>
+          <a
+            class="wa-btn"
+            href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20would%20like%20to%20receive%20article%20updates."
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-whatsapp"></i> Sign Up
+          </a>
+        </div>
+        <div class="info-card">
+          <h3><i class="fa fa-user-pen"></i> Interested in Posting Articles?</h3>
+          <p>Sign up and become a contributor—share your union story or guide!</p>
+          <a
+            class="wa-btn secondary"
+            href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20want%20to%20sign%20up%20to%20post%20union%20articles."
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-whatsapp"></i> Become a Contributor
+          </a>
+        </div>
+      </section>
+      <!-- End Info Cards -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>ZEHSSCWU News</strong> © <span id="year"></span> | Built by Mondlie.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Responsive navigation
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.onclick = function() {
+      mainNav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    };
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

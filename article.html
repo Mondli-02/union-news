@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="pageTitle">Article • Union News & Guides</title>
+  <!-- Google Fonts: Montserrat & Nunito -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,600,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/article.jpg">
+  <meta name="description" content="Union article" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Union Logo" class="logo" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <a href="index.html" class="home-link"><h1>ZEHSSCWU Articles</h1></a>
+          <p class="tagline">All things union</p>
+        </div>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="btn-nav">Home</a>
+        <a href="#" id="aboutLink" aria-disabled="true" class="btn-nav">About</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container article-container">
+    <article id="article" class="article" aria-live="polite">
+      <h1 id="title">Loading…</h1>
+      <div class="meta">
+        <time id="date" datetime=""></time> • <span id="category"></span>
+      </div>
+
+      <div id="coverWrap" class="cover" hidden>
+        <img id="coverImage" src="images/logo.jpg" alt="" />
+        <figcaption id="coverCaption"></figcaption>
+      </div>
+
+      <div id="content"></div>
+
+      <!-- Article action buttons injected by JS -->
+      <div id="articleActions" class="article-actions"></div>
+
+      <hr />
+      <p class="back-link">
+        <a href="index.html" class="btn-back"><i class="fa fa-arrow-left"></i> Back to all articles</a>
+      </p>
+    </article>
+  </main>
+
+  <section class="info-cards">
+    <div class="info-card">
+      <h3><i class="fab fa-whatsapp"></i> Get Article Updates on WhatsApp</h3>
+      <p>Sign up to receive new union articles and news directly on WhatsApp!</p>
+      <a
+        class="wa-btn"
+        href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20would%20like%20to%20receive%20article%20updates."
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-whatsapp"></i> Sign Up
+      </a>
+    </div>
+    <div class="info-card">
+      <h3><i class="fa fa-user-pen"></i> Interested in Posting Articles?</h3>
+      <p>Sign up and become a contributor—share your union story or guide!</p>
+      <a
+        class="wa-btn secondary"
+        href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20want%20to%20sign%20up%20to%20post%20union%20articles."
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-whatsapp"></i> Become a Contributor
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>ZEHSSCWU News</strong> © <span id="year"></span> | Built by Mondlie.</p>
+    </div>
+  </footer>
+
+  <!-- jsPDF via CDN (recommended) -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" integrity="sha256-8LrQw4z7V8Yb8m7QyQqO0oWZQEK5z3mKJkY0M0b6Szw=" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+  <script>const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+
+navToggle.addEventListener('click', () => {
+  mainNav.classList.toggle('open'); // toggle visibility
+  navToggle.classList.toggle('active'); // optional: animate hamburger
+});
+</script>
+</body>
+</html>

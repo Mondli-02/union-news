@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "id": "meeting-recap-august",
+      "title": "Union Meeting Recap — August General Meeting",
+      "date": "2025-08-10",
+      "category": "News & Updates",
+      "tags": ["meetings", "minutes", "recap"],
+      "excerpt": "Key decisions on dues alignment, digital attendance rollout, and next steps for member services."
+    },
+    {
+      "id": "legal-corner-know-your-rights",
+      "title": "Legal Corner: Know Your Rights Under the CBA",
+      "date": "2025-08-01",
+      "category": "Legal Corner",
+      "tags": ["law", "workers-rights", "contracts"],
+      "excerpt": "A practical guide to understanding leave, overtime, and grievance procedures in plain language."
+    },
+    {
+        "id": "tutorial-filling-forms",
+        "title": "Tutorial: Filling the Union Dues Form Correctly",
+        "date": "2025-08-16",
+        "category": "Tutorials & Guides",
+        "tags": ["tutorial", "forms"],
+        "excerpt": "Step-by-step instructions to avoid common mistakes and delays."
+    }
+
+  ]
+}

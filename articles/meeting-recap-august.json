@@ -1,0 +1,30 @@
+{
+  "title": "Union Meeting Recap — August General Meeting",
+  "id": "meeting-recap-august",
+  "date": "2025-08-10",
+  "category": "News & Updates",
+  "cover": {
+    "src": "images/logo.jpg",
+    "alt": "Union logo",
+    "caption": "Building stronger workplaces together."
+  },
+  "blocks": [
+    { "type": "p", "text": "Here’s a clear summary of the decisions taken during the August general meeting." },
+    { "type": "h2", "text": "1) Union Dues Alignment" },
+    { "type": "p", "text": "Institutions will align dues using the updated calculator provided by the union office. A circular will be issued to confirm rates and timelines." },
+    { "type": "h2", "text": "2) Digital Attendance Rollout" },
+    { "type": "ul", "items": [
+      "QR attendance app adopted union-wide.",
+      "Each institution will receive onboarding materials.",
+      "Support desk open on meeting days."
+    ]},
+    { "type": "h2", "text": "3) Member Services" },
+    { "type": "p", "text": "The union card validation system is now live. Members can retrieve their card details online and verify their status ahead of events." },
+    { "type": "h2", "text": "Next Steps" },
+    { "type": "ol", "items": [
+      "Publish detailed dues guide.",
+      "Share training dates for QR attendance.",
+      "Open suggestions channel for service improvements."
+    ]}
+  ]
+}
