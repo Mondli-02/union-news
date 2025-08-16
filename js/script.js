@@ -164,9 +164,6 @@ async function bootArticle() {
   if (actions) {
     actions.innerHTML = `
       <button class="pdf-download" id="downloadPdfBtn"><i class="fa fa-download"></i> Download Article</button>
-      <a class="wa-share" id="shareWhatsApp" target="_blank" rel="noopener">
-        <i class="fab fa-whatsapp"></i> Share on WhatsApp
-      </a>
       <a class="wa-signup" target="_blank" rel="noopener"
         href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20would%20like%20to%20receive%20article%20updates.">
         <i class="fab fa-whatsapp"></i> Sign Up for WhatsApp Updates

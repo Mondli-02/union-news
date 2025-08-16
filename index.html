@@ -12,6 +12,7 @@
   <meta name="description" content="All things union: news, meetings, legal articles, and tutorials for members." />
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/ham_style.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,13 +24,18 @@
           <p class="tagline">Meetings • Legal Corner • Tutorials</p>
         </div>
       </div>
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="btn-nav">Home</a>
-        <a href="#" id="aboutLink" aria-disabled="true" class="btn-nav">About</a>
-      </nav>
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
+      <!-- Checkbox toggle -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Menu overlay -->
+  <div class="menu-overlay">
+    <label for="menu-toggle" class="close-btn">×</label>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Hamburger button -->
+  <label for="menu-toggle" class="hamburger">☰</label>
     </div>
   </header>
 
