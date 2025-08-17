@@ -21,43 +21,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/ham_style.css" />
   </head>
   <body>
+    <noscript>
+      <div class="noscript-warning">
+        This site requires JavaScript to function properly. Please enable
+        JavaScript in your browser.
+      </div>
+    </noscript>
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
           <img
             src="images/logo.jpg"
-            alt="Union Logo"
+            alt="ZEHSSCWU Union Logo"
             class="logo"
             onerror="this.style.display='none'"
           />
           <div class="brand-text">
-            <a href="index.html" class="home-link"
-              ><h1>ZEHSSCWU Articles</h1></a
+            <a href="index.html" class="home-link" aria-label="Go to home page"
+              ><span class="visually-hidden">Home</span></a
             >
+            <span class="brand-title">ZEHSSCWU Articles</span>
             <p class="tagline">All things union</p>
           </div>
         </div>
         <!-- Checkbox toggle -->
-        <input type="checkbox" id="menu-toggle" />
-
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+        />
         <!-- Menu overlay -->
-        <div class="menu-overlay">
-          <label for="menu-toggle" class="close-btn">×</label>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-        </div>
-
+        <nav class="menu-overlay" aria-label="Site menu" tabindex="-1">
+          <label
+            for="menu-toggle"
+            class="close-btn"
+            aria-label="Close navigation menu"
+            tabindex="0"
+            >×</label
+          >
+          <a href="index.html" tabindex="0">Home</a>
+          <a href="about.html" tabindex="0">About</a>
+        </nav>
         <!-- Hamburger button -->
-        <label for="menu-toggle" class="hamburger">☰</label>
+        <label
+          for="menu-toggle"
+          class="hamburger"
+          aria-label="Open navigation menu"
+          tabindex="0"
+          aria-controls="menu-overlay"
+          >☰</label
+        >
       </div>
     </header>
 
     <main class="container article-container">
       <article id="article" class="article" aria-live="polite">
-        <h1 id="title">Loading…</h1>
+        <h1 id="title" class="main-page-title">Loading…</h1>
         <div class="meta">
           <time id="date" datetime=""></time> • <span id="category"></span>
         </div>
@@ -72,11 +93,28 @@
         <!-- Article action buttons injected by JS -->
         <div id="articleActions" class="article-actions"></div>
 
+        <div class="share-section">
+          <a
+            id="shareWhatsApp"
+            class="wa-btn"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            aria-label="Share article on WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i> Share on WhatsApp
+          </a>
+        </div>
+
         <hr />
         <p class="back-link">
-          <a href="index.html" class="btn-back"
-            ><i class="fa fa-arrow-left"></i> Back to all articles</a
+          <a
+            href="index.html"
+            class="btn-back"
+            aria-label="Back to all articles"
           >
+            <i class="fa fa-arrow-left"></i> Back to all articles
+          </a>
         </p>
       </article>
     </main>
@@ -92,6 +130,7 @@
           href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20would%20like%20to%20receive%20article%20updates."
           target="_blank"
           rel="noopener"
+          aria-label="Sign up for WhatsApp article updates"
         >
           <i class="fab fa-whatsapp"></i> Sign Up
         </a>
@@ -104,6 +143,7 @@
           href="https://wa.me/263777217619?text=Hey%20Mondli%2C%20I%20want%20to%20sign%20up%20to%20post%20union%20articles."
           target="_blank"
           rel="noopener"
+          aria-label="Sign up to become a contributor"
         >
           <i class="fab fa-whatsapp"></i> Become a Contributor
         </a>
@@ -129,14 +169,5 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="js/script.js"></script>
-    <script>
-      const navToggle = document.getElementById("navToggle");
-      const mainNav = document.getElementById("mainNav");
-
-      navToggle.addEventListener("click", () => {
-        mainNav.classList.toggle("open"); // toggle visibility
-        navToggle.classList.toggle("active"); // optional: animate hamburger
-      });
-    </script>
   </body>
 </html>

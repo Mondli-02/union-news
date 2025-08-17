@@ -77,21 +77,15 @@ img {
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
-.brand-text h1,
-.brand-text .home-link h1 {
-  margin: 0;
+.brand-title {
   font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: var(--brand) !important;
   text-decoration: none !important;
   transition: none !important;
-}
-.brand-text .home-link:visited h1,
-.brand-text .home-link:active h1,
-.brand-text .home-link:hover h1 {
-  color: var(--brand) !important;
-  text-decoration: none !important;
+  display: block;
+  margin: 0;
 }
 .brand-text .home-link {
   text-decoration: none !important;
@@ -104,89 +98,99 @@ img {
   font-family: "Nunito", sans-serif;
 }
 
-nav.main-nav {
-  display: flex;
-  gap: 12px;
-  font-family: "Montserrat", sans-serif;
-}
-nav.main-nav .btn-nav {
-  color: var(--button-text);
-  background: var(--button-bg);
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 650;
-  padding: 8px 22px;
-  box-shadow: 0 1px 4px 0 rgba(230, 184, 0, 0.04);
-  margin: 0 3px;
-  font-size: 1rem;
-  cursor: pointer;
-  outline: none;
-  transition: background 0.15s, color 0.15s;
-  display: inline-block;
-}
-nav.main-nav .btn-nav:visited,
-nav.main-nav .btn-nav:active {
-  color: var(--button-text);
-  background: var(--button-bg);
-}
-nav.main-nav .btn-nav:hover,
-nav.main-nav .btn-nav:focus {
-  background: var(--button-bg-hover);
-  color: var(--button-text);
-}
-
-.nav-toggle {
+.main-page-title {
   display: none;
-  background: transparent;
-  border: none;
-  outline: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
 }
-.nav-toggle .bar {
-  display: block;
-  width: 24px;
-  height: 3px;
-  background: var(--accent);
-  border-radius: 2px;
-  transition: 0.2s;
-}
-.nav-toggle.open .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-.nav-toggle.open .bar:nth-child(2) {
-  opacity: 0;
-}
-.nav-toggle.open .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+@media (max-width: 1000px) {
+  .main-page-title {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem 0;
+    color: var(--brand);
+  }
 }
 
-@media (max-width: 800px) {
-  nav.main-nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    background: var(--bg);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 44px 24px 24px 24px;
-    gap: 18px;
-    min-width: 210px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    transform: translateX(100%);
-    transition: transform 0.23s;
-    z-index: 90;
-  }
-  nav.main-nav.open {
-    display: flex;
-    transform: translateX(0);
-  }
-  .nav-toggle {
-    display: flex;
-  }
+/* HAMBURGER MENU */
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger button */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  display: inline-block;
+  user-select: none;
+  z-index: 1001;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+/* Full-screen menu overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  background-color: rgba(241, 172, 46, 0.401);
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(0.77, 0, 0.18, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+}
+.menu-overlay a,
+.menu-overlay label.close-btn {
+  pointer-events: auto;
+}
+
+/* Menu links */
+.menu-overlay a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  margin: 10px 0;
+  outline: none;
+}
+.menu-overlay a:focus,
+.menu-overlay a:hover {
+  color: #123bf3;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+}
+
+/* Close button */
+.menu-overlay label.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+  background: none;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
+}
+
+/* Show overlay when checkbox is checked */
+#menu-toggle:checked + .menu-overlay {
+  height: 100vh;
+  pointer-events: auto;
 }
 
 /* SIDEBAR */
@@ -229,7 +233,8 @@ nav.main-nav .btn-nav:focus {
   padding: 4px 8px;
   transition: background 0.14s;
 }
-.sidebar-list a:hover {
+.sidebar-list a:hover,
+.sidebar-list a:focus {
   background: rgba(39, 174, 96, 0.08);
   color: var(--accent-2);
 }
@@ -348,7 +353,7 @@ nav.main-nav .btn-nav:focus {
 }
 .pager button {
   min-height: 40px;
-  border: 1px solid #e3e3e3;
+  border: 1.5px solid #e3e3e3;
   background: #f8f6f0;
   color: var(--text);
   border-radius: 10px;
@@ -450,10 +455,49 @@ nav.main-nav .btn-nav:focus {
 }
 
 /* Article actions modernized */
+.article-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 600px) {
+  .article-actions {
+    gap: 15px;
+    width: 100%;
+  }
+  .article-actions > * {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .article-actions .btn,
 .article-actions .btn-green {
-  margin: 0 7px 7px 0;
   min-width: 170px;
+}
+.pdf-download {
+  background: #2563eb !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+}
+.pdf-download:active {
+  filter: brightness(0.94);
+}
+.pdf-download .ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 600ms linear;
+  background: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
 /* WhatsApp and Download button in article actions */
@@ -527,6 +571,7 @@ nav.main-nav .btn-nav:focus {
 /* Content Styling */
 #content p {
   margin: 0 0 14px;
+  font-family: "Nunito", sans-serif;
 }
 #content h2 {
   margin: 18px 0 8px;
@@ -582,7 +627,7 @@ nav.main-nav .btn-nav:focus {
   margin-bottom: 18px;
 }
 
-/* Misc */
+/* Miscellaneous */
 ::-webkit-scrollbar {
   width: 8px;
   background: #eee;
@@ -590,4 +635,25 @@ nav.main-nav .btn-nav:focus {
 ::-webkit-scrollbar-thumb {
   background: #ecd99e;
   border-radius: 7px;
+}
+
+/* Accessibility helpers */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Noscript warning */
+.noscript-warning {
+  background: #e6b800;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 1.1em;
+  border-bottom: 1px solid #e3e3e3;
 }

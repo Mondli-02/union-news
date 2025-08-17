@@ -1,0 +1,93 @@
+{
+  "title": "Combating Sexual Harassment in the Workplace: A Call to Action for All Members",
+  "id": "sexual-harassment-workplace",
+  "date": "2025-08-17",
+  "category": "News & Updates",
+  "author": "Mondliwethu Moyo",
+  "pdf": "articles/pdfs/meeting-recap-august.pdf",
+  "cover": {
+    "src": "articles/article_images/logo.jpg",
+    "alt": "Union logo",
+    "caption": "Building stronger workplaces together."
+  },
+  "blocks": [
+    {
+      "type": "h2",
+      "text": "Combating Sexual Harassment in the Workplace: A Call to Action for All Members"
+    },
+    {
+      "type": "h2",
+      "text": "Introduction"
+    },
+    {
+      "type": "p",
+      "text": "Sexual harassment in the workplace remains a serious issue that affects employees’ safety, dignity, and productivity. It can take many forms, from unwanted physical contact to inappropriate comments, gestures, or requests. No worker should ever feel unsafe or uncomfortable while performing their duties. As a union, it is our responsibility to ensure that every member knows their rights and has access to protection and support."
+    },
+    {
+      "type": "h2",
+      "text": "Understanding Sexual Harassment"
+    },
+    {
+      "type": "p",
+      "text": "Sexual harassment includes any unwelcome behavior of a sexual nature that makes an employee feel intimidated, degraded, or humiliated. It can be:"
+    },
+     { "type": "ul", "items": [
+      "Verbal: Inappropriate jokes, comments, or requests of a sexual nature.",
+      "Non-verbal: Leering, gestures, or displaying sexually explicit materials.",
+      "Physical: Unwanted touching, hugging, or other forms of physical contact."
+    ]},
+    {
+      "type": "p",
+      "text": "Such behavior is not only morally unacceptable but also legally punishable under Zimbabwean labour laws and international labour standards."
+    },
+    {
+      "type": "h2",
+      "text": "Impact on Employees"
+    },
+    {
+      "type": "p",
+      "text": "Sexual harassment can have serious consequences for victims, including emotional distress, anxiety, reduced productivity, and even physical health issues. A workplace where harassment is ignored fosters fear and undermines teamwork, trust, and morale."
+    },
+    {
+      "type": "h2",
+      "text": "Union’s Role in Preventing Harassment"
+    },
+    {
+      "type": "p",
+      "text": "Our union is committed to creating a safe and respectful working environment. We urge all members to:"
+    },
+     { "type": "ol", "items": [
+      "Know your rights: Every worker has the right to a harassment-free workplace.",
+      "Report incidents: Use official reporting channels within your institution or through the union.",
+      "Support colleagues: Stand together against harassment and ensure victims feel supported, not isolated.",
+      "Participate in training: Attend workshops on sexual harassment awareness and prevention."
+    ]},
+    {
+      "type": "h2",
+      "text": "What Employers Must Do"
+    },
+    { "type": "ul", "items": [
+      "Employers have a legal and moral duty to prevent sexual harassment. This includes:",
+      "Implementing clear anti-harassment policies.",
+      "Providing regular awareness and training programs.",
+      "Investigating complaints promptly and confidentially.",
+      "Taking disciplinary action against perpetrators."
+    ]},
+       {
+      "type": "h2",
+      "text": "Conclusion"
+    },
+    {
+      "type": "p",
+      "text": "Eliminating sexual harassment is not just a legal obligation—it is a moral imperative. Together, as a union, we can build workplaces where respect, dignity, and safety are non-negotiable. Let every member commit to speaking out, supporting victims, and holding perpetrators accountable."
+    },
+    {
+      "type": "h2",
+      "text": "Call to Action"
+    },
+    {
+      "type": "p",
+      "text": "If you or a colleague experiences harassment, report it immediately to your union representative. Together, we can ensure that no worker is left to suffer in silence."
+    }
+  ]
+}

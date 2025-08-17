@@ -6,7 +6,8 @@
       "date": "2025-08-10",
       "category": "News & Updates",
       "tags": ["meetings", "minutes", "recap"],
-      "excerpt": "Key decisions on dues alignment, digital attendance rollout, and next steps for member services."
+      "excerpt": "Key decisions on dues alignment, digital attendance rollout, and next steps for member services.",
+      "author": "Jane Moyo"
     },
     {
       "id": "legal-corner-know-your-rights",
@@ -14,7 +15,8 @@
       "date": "2025-08-01",
       "category": "Legal Corner",
       "tags": ["law", "workers-rights", "contracts"],
-      "excerpt": "A practical guide to understanding leave, overtime, and grievance procedures in plain language."
+      "excerpt": "A practical guide to understanding leave, overtime, and grievance procedures in plain language.",
+      "author": "Tawanda Ncube"
     },
     {
       "id": "tutorial-filling-forms",
@@ -22,7 +24,17 @@
       "date": "2025-08-16",
       "category": "Tutorials & Guides",
       "tags": ["tutorial", "forms"],
-      "excerpt": "Step-by-step instructions to avoid common mistakes and delays."
-    }
+      "excerpt": "Step-by-step instructions to avoid common mistakes and delays.",
+      "author": "Mondli Sibanda"
+    },
+    {
+  "id": "sexual-harassment-workplace",
+  "title": "Combating Sexual Harassment in the Workplace: A Call to Action for All Members",
+  "date": "2025-08-17",
+  "category": "News & Updates",
+  "tags": ["sexual harassment","workplace","rights"],
+  "excerpt": "Sexual harassment is a prevailing menace in the workplace.",
+  "author": "Mondliwethu Moyo"
+}
   ]
 }

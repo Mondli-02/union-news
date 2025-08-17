@@ -3,6 +3,13 @@
   "id": "legal-corner-know-your-rights",
   "date": "2025-08-01",
   "category": "Legal Corner",
+  "author": "Tawanda Ncube",
+  "pdf": "articles/pdfs/meeting-recap-august.pdf",
+  "cover": {
+    "src": "articles/article_images/logo.jpg",
+    "alt": "Union logo",
+    "caption": "Building stronger workplaces together."
+  },
   "blocks": [
     { "type": "p", "text": "This quick guide helps members understand key provisions of the Collective Bargaining Agreement (CBA) in plain language." },
     { "type": "h2", "text": "Leave Entitlements" },
@@ -22,3 +29,4 @@
     { "type": "quote", "text": "Rights are strongest when documented. Keep copies of letters, emails, and timesheets." }
   ]
 }
+  

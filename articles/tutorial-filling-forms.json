@@ -1,0 +1,32 @@
+{
+  "title": "Tutorial: Filling the Union Dues Form Correctly",
+  "id": "tutorial-filling-forms",
+  "date": "2025-08-16",
+  "category": "Tutorials & Guides",
+  "author": "Mondli Sibanda",
+  "pdf": "articles/pdfs/meeting-recap-august.pdf",
+  "cover": {
+    "src": "articles/article_images/logo.jpg",
+    "alt": "Union logo",
+    "caption": "Building stronger workplaces together."
+  },
+  "blocks": [
+    { "type": "p", "text": "Follow these steps to fill out your dues form accurately and avoid costly mistakes." },
+    { "type": "h2", "text": "Step 1: Download the Form" },
+    { "type": "p", "text": "Visit the union portal and download the latest version of the dues form." },
+    { "type": "h2", "text": "Step 2: Fill Out Personal Information" },
+    { "type": "ul", "items": [
+      "Ensure your full legal name matches your ID.",
+      "Provide a valid employee or membership number.",
+      "Double-check your contact details."
+    ]},
+    { "type": "h2", "text": "Step 3: Indicate Dues Amount" },
+    { "type": "p", "text": "Refer to your pay slip for the correct monthly deduction. Enter it clearly." },
+    { "type": "h2", "text": "Step 4: Submit and Keep a Copy" },
+    { "type": "ol", "items": [
+      "Submit the form to your HR office or union rep.",
+      "Retain a stamped copy for your records."
+    ]},
+    { "type": "quote", "text": "A careful form today prevents delays tomorrow." }
+  ]
+}
