@@ -53,9 +53,9 @@ async function bootFeed() {
   // newest first
   all.sort((a,b)=> new Date(b.date) - new Date(a.date));
 
-  // Sidebar: show top 10 articles (latest)
+  // Sidebar: show top 4 articles (latest)
   if (sidebarList) {
-    sidebarList.innerHTML = all.slice(0, 10).map(a =>
+    sidebarList.innerHTML = all.slice(0, 4).map(a =>
       `<li><a href="article.html?id=${encodeURIComponent(a.id)}">${a.title}</a></li>`
     ).join('');
   }

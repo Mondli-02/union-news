@@ -4,8 +4,11 @@
   --accent: #e6b800; /* union gold */
   --accent-2: #25d366; /* WhatsApp green */
   --accent-3: #2ea043; /* green for success bits */
+  --ring: #7cc4ff55;
   --text: #222;
+  --text2: #e7edf3;
   --muted: #0e0e0e;
+  --muted2: #8a98a8;
   --link: #0f0f0f;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -580,6 +583,36 @@ img {
 }
 #content ul {
   margin: 0 0 14px 18px;
+}
+
+.pill,
+.meta {
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklab, var(--muted2), transparent 60%);
+  background-color: var(--muted2);
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  max-width: fit-content;
+  font-weight: bold;
+}
+
+.author {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--muted2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklab, var(--ring), transparent 40%);
+  background: color-mix(in oklab, var(--ring), var(--bg) 85%);
+  color: var(--text2);
+  font-weight: 600;
+  display: flex;
+  max-width: fit-content;
 }
 
 @media (max-width: 900px) {
